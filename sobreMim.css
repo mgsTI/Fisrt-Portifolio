@@ -1,0 +1,28 @@
+#sobreMim{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.Tsobre{
+    font-size: 28pt;
+    font-family: Alpe;
+    color: white;
+    margin-top: 100px;
+    text-shadow: 2px 2px 8px antiquewhite;
+}
+
+.descrição{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font-family: quando;
+    text-shadow: 2px 2px 1px black;
+    font-size: 18pt;
+}
+
+.imgs{
+    padding: 15px;
+}
+

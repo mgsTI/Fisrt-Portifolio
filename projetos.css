@@ -1,0 +1,129 @@
+#cards-mobile{
+    display: none;
+}
+
+.tittle-proj{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 28pt;
+    font-family: Alpe;
+    color: white;
+    text-shadow: 2px 2px 8px antiquewhite;
+}
+
+.subtittle-proj{
+    text-align: center;
+    color: red;
+    margin-top: 20px;
+    font-size: 11pt;
+    font-family: quando;
+}
+
+.box-titulo-projetos{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font-family: PS2;
+    font-size: 28pt;
+    padding: 40px;
+    color: white;
+    text-shadow: 4px 4px 6px black;
+}
+
+#container-projetos{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+#container-projetos #cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 280px;
+    height: 400px;
+    margin: 30px;
+    box-shadow: 7px 7px 15px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.062);
+    backdrop-filter: hue-rotate(-10deg);
+    overflow: hidden;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+#container-projetos #cards .content{
+    padding: 20px;
+    text-align: center;
+    transform: translateY(100px);
+    opacity: 0;
+    transition: 0.5s;
+}
+
+#container-projetos #cards:hover .content{
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+#container-projetos #cards .content h2{
+    position: absolute;
+    top: -10px;
+    right: -8px;
+    font-size: 8em;
+    color: rgba(171, 171, 171, 0.326);
+    pointer-events: none;
+}
+
+#container-projetos #cards .content h3{
+    font-size: 2em;
+    color: #fff;
+    font-family: Alpe;
+    text-shadow: 2px 2px 8px antiquewhite;
+    margin-top: 60px;
+    z-index: 1;
+}
+
+#container-projetos #cards .content p{
+    font-size: 1.3em;
+    color: purple;
+    margin-top: 24px;
+    font-weight: 500;
+    font-family: poppins;
+    text-shadow: 1px 1px 1px black;
+}
+
+#container-projetos #cards .content a{
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    font-family: quando;
+    font-size: 10pt;
+    padding: 8px 20px;
+    margin-top: 80px;
+    background: #fff;
+    color: black;
+    border-radius: 20px;
+    font-weight: 700;
+    box-shadow: 0px 5px purple;
+    transition: .3s;
+}
+
+#container-projetos #cards .content a:hover{
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    font-family: quando;
+    font-size: 10pt;
+    padding: 8px 20px;
+    margin-top: 80px;
+    background: purple;
+    color: rgb(255, 255, 255);
+    border-radius: 20px;
+    font-weight: 500;
+    box-shadow: 0px 5px 10px rgb(145, 1, 145);
+    letter-spacing: 5px;
+}   

@@ -1,0 +1,280 @@
+#box{
+    position: relative;
+    display: block;
+    width: 80px;
+    height: 40px;
+    border-radius: 160px;
+    background: rgb(41, 41, 41);
+    transition: 0.5s;
+    box-shadow: inset 0 8px 60px rgba(0, 0, 0, 0.5),
+                inset 0 8px 8px rgba(0, 0, 0, 0.5),
+                inset 0 -4px 4px rgba(0, 0, 0, 0.5);
+
+                /* inset = "luminosidade" dentro da bolinha */
+}
+
+/* box= caixa da bolinha */
+
+/* toggleBall= bolinha */
+
+#box .toggleBall{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    background: linear-gradient(to bottom, #444, #222);
+    border-radius: 50%;
+    transform: scale(0.9);
+    box-shadow: 0 8px 40px rgba(0, 0, 0, 0.5),
+                inset 0 4px 4px rgba(255, 255, 255, 0.1),
+                inset 0 -4px 4px rgba(255, 255, 255, 0.1);
+    transition: 0.5s;
+}
+
+#box.active .toggleBall{
+    left: 40px;
+    background: white;
+    box-shadow: 0 8px 40px rgba(0, 0, 0, 0.8),
+    inset 0 4px 4px rgba(40, 40, 40, 0.6),
+    inset 0 -4px 4px rgba(40, 40, 40, 0.6);
+}
+
+#box.active{
+    background: white;
+    transition: 0.5s;
+    box-shadow: inset 0 8px 60px rgba(58, 58, 58, 0.1),
+                inset 0 8px 8px rgba(58, 58, 58, 0.1),
+                inset 0 -4px 4px rgba(58, 58, 58, 0.1);
+}
+
+body{
+    transition: 1s;
+}
+
+body.active{ /* quando body estiver 'ativo': */
+    transition: 1s;
+    background-image: url(styles/Simple\ Shiny.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-size: cover;
+}
+
+    /* HEADER */
+
+header.active{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #4b8adc96;
+        backdrop-filter: blur(10px);
+        height: 90px;
+        padding: 1rem;
+        z-index: 10;
+    }
+
+header.active #nav #menu #linkHeader .link{
+    color: white;
+    font-weight: 600;
+}
+
+header.active #nav #menu #linkHeader .link:hover{
+    color: rgb(0, 76, 255);
+    text-shadow: 1px 1px 1px black;
+}
+   
+    /* HEADER */
+
+    /* HOME */
+
+    #home.active .tittle .tittleP{
+        color: #ffffff;
+        text-shadow: 1px 1px 1px black;
+        font-weight: 1000;
+    }
+
+    #home.active .tittle .subtittle{
+        color: rgb(0, 76, 255);
+        text-shadow: 1px 1px 1px black;
+        font-weight: 1000;
+        animation: pisca 400ms infinite linear;
+    }
+
+    @keyframes pisca {
+        0%, 100%{
+            border-right-color: rgb(110, 110, 110);
+        }
+    
+        50%{
+            border-right-color: transparent;
+        }
+    }
+
+    #home.active .tittle .gitHub #gitbtn{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        margin-top: 10px;
+        margin-left: 25%;
+        color: black;
+        font-family: poppins;
+        font-size: 12pt;
+        font-weight: 1000;
+        text-shadow: 1px 1px 1px black;
+        background-image: url(styles/Contour\ Line-white.svg);
+        letter-spacing: 2px;
+        border: none;
+        border-radius: 160px;
+        width: 50%;
+        height: 40px;
+        transition: 0.5s;
+    }
+
+    #home.active .tittle .gitHub #gitbtn:hover{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 10px;
+        margin-left: 0;
+        border: none;
+        letter-spacing: 13px;
+        width: 100%;
+        height: 40px;
+    }
+
+    /* HOME */
+
+    /* SOBRE */
+
+    #sobreMim.active .Tsobre{
+        color: #4b89dc;
+        text-shadow: 1px 1px 8px white;
+    }
+
+    #sobreMim.active p{
+        color: black;
+        text-shadow: 1px 1px 0.2px #4b89dc;
+        font-weight: 700;
+    }
+
+    /* SOBRE */
+
+    /* PROJETOS */
+
+    #projetos.active .tittle-proj{
+        color: #4b89dc;
+        text-shadow: 1px 1px 8px white;
+    }
+
+    #projetos.active #container-projetos #cards{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        width: 280px;
+        height: 400px;
+        margin: 30px;
+        box-shadow: 0px 7px 15px rgba(255, 255, 255, 1);
+        border-radius: 10px;
+        background: rgba(140, 140, 140, 0.062);
+        backdrop-filter: blur(10px);
+        overflow: hidden;
+        border-top: 1px solid rgba(255, 255, 255, 0.5);
+        border-left: 1px solid rgba(255, 255, 255, 0.5);
+    }
+
+    #projetos.active #container-projetos #cards .content h2{
+        position: absolute;
+        top: -10px;
+        right: -8px;
+        font-size: 8em;
+        color: rgba(38, 38, 38, 0.137);
+        pointer-events: none;
+        z-index: -1;
+    }
+
+    #projetos.active #container-projetos #cards .content h3{
+        font-size: 2em;
+        color: #fff;
+        font-family: Alpe;
+        text-shadow: 3px 3px 4px #4b89dc;
+        margin-top: 60px;
+        z-index: 1;
+    }
+
+    #projetos.active #container-projetos #cards .content p{
+        font-size: 1.3em;
+        color: #4b89dc;
+        margin-top: 24px;
+        font-weight: 500;
+        font-family: poppins;
+        text-shadow: 1px 1px 1px black;
+    }
+
+    #projetos.active #container-projetos #cards .content a{
+        position: relative;
+        display: inline-block;
+        text-decoration: none;
+        font-family: quando;
+        font-size: 12pt;
+        padding: 8px 20px;
+        margin-top: 80px;
+        background: #fff;
+        color: black;
+        border-radius: 20px;
+        font-weight: 700;
+        box-shadow: 0px 5px #4b89dc;
+        transition: .3s;
+    }
+    
+    #projetos.active #container-projetos #cards .content a:hover{
+        position: relative;
+        display: inline-block;
+        text-decoration: none;
+        font-family: quando;
+        font-size: 12pt;
+        text-shadow: 1px 1px 5px white;
+        padding: 8px 20px;
+        margin-top: 80px;
+        background: #4b89dc;
+        color: rgb(255, 255, 255);
+        border-radius: 20px;
+        font-weight: 500;
+        box-shadow: 0px 5px 10px #4b89dc;
+        letter-spacing: 5px;
+    }   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /* PROJETOS */
+
+

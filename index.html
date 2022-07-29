@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="styles/ico-portifólio.png" type="image/x-icon">
+    <link rel="stylesheet" href="HeaderHome.style.css">
+    <link rel="stylesheet" href="L&D.css">
+    <link rel="stylesheet" href="sobreMim.css">
+    <link rel="stylesheet" href="projetos.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="media.css">
+    <title> Miguel | Portifólio </title>
+</head>
+<body>
+
+<!--      HEADER      -->
+
+    <header>
+
+        <div id="box">
+            <i class="toggleBall"></i>
+        </div>
+
+        <nav id="nav">
+            <i id="Bmobile"><img src="styles/menu mobile white.png" alt="botão"></i>
+            <ul id="menu">
+                <li id="linkHeader"> <a class="link" href="#home">Home</a> </li>
+                <li id="linkHeader"> <a class="link" href="#sobreMim">Sobre mim</a> </li>
+                <li id="linkHeader"> <a class="link" href="#projetos">Projetos</a> </li>
+                <li id="linkHeader"> <a class="link" href="https://www.linkedin.com/in/miguel-lopes-pedro-271019247/">LinkedIn</a> </li>
+            </ul>
+        </nav>
+    </header>
+
+<!--      HEADER      -->
+
+<!--      HOME      -->
+
+    <section id="home">
+
+        <div class="tittle">
+            <h2 class="subtittle">Olá, eu sou</h2>
+            <p class="tittleP">Miguel Lopes Pedro</p>
+            <h2 class="subtittle">Estudante front end</h2>
+
+            <div class="gitHub">
+                <a href="https://github.com/mgsTI"> <button id="gitbtn">Github</button> </a>
+             </div>
+        </div>
+
+        <div class="img-home">
+            <img class="imgH" src="styles/home-img.png" alt="Home-img">
+        </div>
+
+    </section>
+    <br><br><br><br>
+ <!--      HOME      -->
+
+ <section id="sobreMim">
+
+ <hr id="hrs">
+
+
+    <h1 class="Tsobre">Sobre mim</h1>
+    <br><br>
+    <p class="descrição">
+        Me chamo Miguel Lopes, minha paixão por tecnologia vem desde
+        <br>
+        quando eu era pequeno, gostava de ficar montando e desmontando
+        <br>
+        computadores que eu tinha em casa, toda a parte do hardware cheguei
+        <br>
+        até a fazer curso de hardware/robótica mas percebi que não era uma
+        <br>
+        aréa que me interessava tanto, até eu chegar no primeiro ano do ensino
+        <br>
+        médio e conhecer a programação, comecei a levar a sério os estudos,
+        <br>
+        hoje em dia estudo front-end, mas com expectativas de evolução para
+        <br>
+        fullstack, pois quero ser um profissional completo e para isso, me dedico
+        <br>
+        muito nos estudos, principalmente na prática.
+    </p>
+
+    <div class="imgs">
+    <img src="styles/html.svg" alt="HTML">
+    <img src="styles/css.svg" alt="css">
+ </div>
+
+</section>
+ <br><br><br><br>
+<!--      SOBRE      -->
+ <hr id="hrs">
+<!--      PROJETOS      -->
+
+<main id="projetos">
+    <br><br><br><br>
+    <div>
+        <h1 class="tittle-proj">Projetos</h1>
+        <h5 class="subtittle-proj">/* passe por cima do card */</h5>
+    </div>
+
+    <section id="container-projetos">
+        <div id="cards">
+            <div class="content">
+                <h2>01</h2>
+                <h3>Projeto um</h3>
+                <p>em desenvolvimento</p>
+                <a href="#">em breve</a>
+            </div>
+        </div>
+
+        <div id="cards">
+            <div class="content">
+                <h2>02</h2>
+                <h3>Projeto dois</h3>
+                <p>em desenvolvimento</p>
+                <a href="#">em breve</a>
+            </div>
+        </div>
+
+        <div id="cards">
+            <div class="content">
+                <h2>03</h2>
+                <h3>Projeto três</h3>
+                <p>em desenvolvimento</p>
+                <a href="#">em breve</a>
+            </div>
+        </div>
+    </section>
+
+</main>
+ 
+<br class="br-media">
+<br class="br-media">
+<br class="br-media">
+<br class="br-media">
+<br class="br-media">
+<br class="br-media">
+<br class="br-media">
+<br class="br-media">
+
+ <script src="script.js"></script>
+ <script src="vanilla-tilt.js"></script>
+ <script>
+    VanillaTilt.init(document.querySelectorAll("#cards"), {
+    max: 25,
+    speed: 400,
+    transition: true,
+    glare: true,
+    "max-glare": 0.550
+ });
+ </script>
+
+ 
+</body>
+</html>

@@ -1,0 +1,211 @@
+@font-face {
+    font-family: Alpe;
+    src: url(fonts/AlpengeistJF.ttf);
+}
+@font-face {
+    font-family: poppins;
+    src: url(fonts/Poppins-Regular.otf);
+}
+@font-face {
+    font-family: quando;
+    src: url(fonts/Quando-Regular.ttf);
+}
+@font-face {
+    font-family: SpecialElite;
+    src: url(fonts/SpecialElite-Regular.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body{
+    background-image: url(styles/home.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    min-height: 100vh;
+    align-items: center;
+    max-width: 1800px;
+    margin: 0 auto;
+}
+
+.hrs{
+    width: 100%;
+}
+
+
+/* ---------HEADER--------- */
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(20, 20, 20, 0.863);
+    height: 90px;
+    padding: 1rem;
+    z-index: 10;
+}
+
+#menu{
+    display: flex;
+    list-style: none;
+    gap: 1rem;
+}
+
+#menu a{
+    font-family: poppins;
+    margin-right: 10px;
+    color: white;
+    font-size: 14pt;
+    text-decoration: none;
+    display: block;
+    padding: .5rem;
+    transition: .3s;
+}
+
+#menu a:hover{
+    color: purple;
+    text-decoration: none;
+    font-size: 15pt;
+    display: block;
+    padding: .5rem;
+}
+
+#menu .li-active{
+    display: none;
+}
+
+#Bmobile{
+    display: none;
+    cursor: pointer;
+}
+
+.logo{
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    margin-left: 10px;
+}
+
+
+/* ---------HEADER--------- */
+
+/* ---------HOME--------- */
+
+#home{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 744px;
+    margin-top: 60px;
+}
+
+.imgH{
+    position: relative;
+    margin-right: 100px;
+    width: 520px;
+    height: 520px;
+    animation: moveImg 4s infinite alternate-reverse linear;
+}
+
+@keyframes moveImg{
+    to{
+        top: -5px;
+    }
+
+    from{
+        top: 10px;
+    }
+}
+
+.tittle{
+    margin: 200px;
+    width: 325px;
+}
+
+.tittleP{
+    font-family: SpecialElite;
+    color: purple;
+    font-size: 2em;
+    line-height: 40px;
+    border-right: 3.5px solid white;
+    font-weight: 1000;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: pisca 400ms infinite linear, typing 4s steps(40) normal both;
+}
+
+@keyframes typing {
+    to{
+        width: 10em;
+    }
+
+    from{
+        width: 0;
+    }
+}
+
+@keyframes pisca {
+    0%, 100%{
+        border-right-color: white;
+    }
+
+    50%{
+        border-right-color: transparent;
+    }
+}
+
+.subtittle{
+    font-family: quando;
+    font-weight: 200;
+}
+
+#gitbtn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-left: 25%;
+    color: white;
+    font-family: poppins;
+    font-size: 12pt;
+    text-shadow: 1px 1px 8px white;
+    background-image: url(styles/SS.svg);
+    background-position: center;
+    letter-spacing: 2px;
+    border: none;
+    border-radius: 160px;
+    width: 50%;
+    height: 40px;
+    transition: 0.5s;
+}
+
+#gitbtn:hover{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    margin-left: 0;
+    border: none;
+    letter-spacing: 13px;
+    width: 100%;
+    height: 40px;
+}
+
+.gitHub a{
+    text-decoration: none;
+}
+
+/* ---------HOME--------- */
+
